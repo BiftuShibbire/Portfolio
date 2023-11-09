@@ -106,7 +106,7 @@ export default function Portfolio() {
     
     <div className="absolute top-0  text-black mb-10">
       <div className='h-full'>
-      <img src={bg} className='absolute top-0 fit w-full mb-10'/>
+      <img src={bg} className='absolute top-0 h-fit w-full mb-10 m-4'/>
       <nav className="flex justify-start bg-white bg-opacity-30  sticky text-md font-bold font-custom top-0 px-2 z-40 h-24">
         <button className="mx-4 text-red-950 hover:text-gray-900 " onClick={() => scrollToSection('aboutMe')}>
           <FontAwesomeIcon icon={faUser} className=" text-red-950 mx-2" />
@@ -125,8 +125,7 @@ export default function Portfolio() {
           Programming Languages
         </button>
       </nav>
-      <div className="container mx-2 py-8  text-red-950 z-30 mb-12">
-  <section>
+  <section className='container mx-2 py-8  text-red-950 z-30 mb-12'>
     <header className="rounded-md py-3 z-30">
       <div className="flex flex-col items-start font-sans  justify-start">
         <img
@@ -152,9 +151,9 @@ export default function Portfolio() {
     </header>
     
   </section>
-  </div>
+
   <section id="aboutMe" className="flex flex-col text-black justify-center items-center mx-2 mt-64">
-    <div className="rounded-md bg-gradient-to-r from-slate-300 to-red-100 w-full md:w-3/4">
+    <div className="rounded-md bg-gradient-to-r from-slate-300 to-red-100 w-full md:w-3/4 my-8">
       <div className="mx-auto flex flex-col justify-center items-center p-6">
         <h2 className="text-2xl  mb-4 font-cursive">About Me</h2>
         <p className="text-lg leading-relaxed">
