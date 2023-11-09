@@ -162,8 +162,8 @@ export default function Portfolio() {
           and user-friendly websites that deliver a great user experience. As a web developer, I am committed to staying up-to-date with the latest trends and modern frameworks in the industry. I believe in building strong relationships and providing regular updates to ensure client satisfaction.
         </p>
       </div>
-      <div className="flex flex-wrap space-x-8 justify-center items-center my-8">
-        <div className="rounded-full shadow-lg justify-center items-center mb-8 bg-gradient-to-r from-slate-400 to-red-300 w-32 h-32">
+      <div className="flex flex-wrap space-x-8 justify-center items-center my-8 z-30">
+        <div className="rounded-full shadow-lg justify-center items-center mb-8 bg-gradient-to-r from-slate-400 to-red-300 w-32 h-32 z-30">
           <a
             href="https://github.com/Bonittas?tab=repositories"
             className="text-white hover:text-gray-100  px-4 py-2 rounded-md flex flex-col items-center justify-center transition-colors duration-300"
