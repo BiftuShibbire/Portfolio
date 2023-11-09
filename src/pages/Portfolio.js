@@ -231,14 +231,17 @@ export default function Portfolio() {
           <FontAwesomeIcon icon={faNodeJs} className="mr-2 text-6xl" />
           Node.js
         </li>
-        <li className="py-3 w-56 border-white rounded-md flex flex-col items-center justify-center shadow-lg transition duration-300 ease-in-out transform hover:scale-105 border-2 border-gradient-to-r from-blue-500 to-red-500 hover:border-gradient-to-r hover:from-red-500 hover:to-blue-500">
-          <FontAwesomeIcon icon={faLeaf} className="mr-2 text-6xl" />
+      <li className="py-3 w-56 border-white rounded-md flex flex-col items-center justify-center shadow-lg transition duration-300 ease-in-out transform hover:scale-105 border-2 border-gradient-to-r from-blue-500 to-red-500 hover:border-gradient-to-r hover:from-red-500 hover:to-blue-500">
+        <FontAwesomeIcon icon={faDatabase} className="mr-2 text-6xl" />
+
           MySQL
         </li>
         <li className="py-3 w-56 border-white rounded-md flex flex-col items-center justify-center shadow-lg transition duration-300 ease-in-out transform hover:scale-105 border-2 border-gradient-to-r from-blue-500 to-red-500 hover:border-gradient-to-r hover:from-red-500 hover:to-blue-500">
-          <FontAwesomeIcon icon={faDatabase} className="mr-2 text-6xl" />
+          <FontAwesomeIcon icon={faLeaf} className="mr-2 text-6xl" />
+
           MongoDB
         </li>
+   
         <li className="py-3 w-56 border-white rounded-md flex flex-col items-center justify-center shadow-lg transition duration-300 ease-in-out transform hover:scale-105 border-2 border-gradient-to-r from-blue-500 to-red-500 hover:border-gradient-to-r hover:from-red-500 hover:to-blue-500">
           <FontAwesomeIcon icon={faCode} className="mr-2 text-6xl" />
           Dart
