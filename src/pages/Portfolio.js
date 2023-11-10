@@ -153,7 +153,7 @@ export default function Portfolio() {
     
   </section>
   </div>
-  <section id="aboutMe" className="flex flex-col text-black justify-center items-center mx-2 mt-64">
+  <section id="aboutMe" className="flex flex-col text-black justify-center items-center mx-2 mt-64 z-40">
     <div className="rounded-md bg-gradient-to-r from-slate-300 to-red-100 w-full md:w-3/4">
       <div className="mx-auto flex flex-col justify-center items-center p-6">
         <h2 className="text-2xl  mb-4 font-cursive">About Me</h2>
