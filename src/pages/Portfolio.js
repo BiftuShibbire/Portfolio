@@ -104,10 +104,11 @@ export default function Portfolio() {
   }, [showText, typedText, displayedText3]);
   return (
     
-    <div className="absolute top-0  text-black mb-10">
-      <div className='h-full'>
-      <img src={bg} className='absolute top-0 fit w-full mb-10'/>
-      <nav className="flex justify-start bg-white bg-opacity-30  sticky text-md font-bold font-custom top-0 px-2 z-40 h-24">
+    <div className=" top-0  text-black mb-2">
+      <div className="mb-1">
+      <img src={bg} className='relative top-0 w-full '/>
+      <nav className="flex justify-start text-md font-bold font-custom   absolute top-0 px-2 z-50 ">
+        <div className='fixed flex items-center top-0 py-4 w-full bg-white bg-opacity-40 h-20 z-50'>
         <button className="mx-4 text-red-950 hover:text-gray-900 " onClick={() => scrollToSection('aboutMe')}>
           <FontAwesomeIcon icon={faUser} className=" text-red-950 mx-2" />
           About Me
@@ -124,11 +125,11 @@ export default function Portfolio() {
           <FontAwesomeIcon icon={faCode} className=" text-red-950 mx-2" />
           Programming Languages
         </button>
+        </div>
       </nav>
-      <div className="container mx-2 py-8  text-red-950 z-30 mb-12">
-  <section>
+  <section className='absolute top-0 container mx-2 py-8  text-red-950 z-30 mb-1'>
     <header className="rounded-md py-3 z-30">
-      <div className="flex flex-col items-start font-sans  justify-start">
+      <div className="flex flex-col items-start font-sans my-16 justify-start">
         <img
           src={i1}
           alt="Profile"
@@ -146,17 +147,14 @@ export default function Portfolio() {
           </p>
         </div>
       </div>
-     
-     
-      
     </header>
-    
   </section>
   </div>
-  <section id="aboutMe" className="flex flex-col text-black justify-center items-center mx-2 mt-64">
-    <div className="rounded-md bg-gradient-to-r from-slate-300 to-red-100 w-full md:w-3/4">
+  <section id="aboutMe" className="flex flex-col text-black justify-center items-center mx-2 my-8 ">
+    <div className="rounded-md bg-gradient-to-r from-slate-300 to-red-100 w-full md:w-3/4 ">
       <div className="mx-auto flex flex-col justify-center items-center p-6">
-        <h2 className="text-2xl  mb-4 font-cursive">About Me</h2>
+      <h2 className="text-2xl  mb-4 font-cursive border rounded-full p-3">About Me</h2>
+
         <p className="text-lg leading-relaxed">
           I am a passionate web developer with expertise in front-end and backend technologies. I love creating responsive
           and user-friendly websites that deliver a great user experience. As a web developer, I am committed to staying up-to-date with the latest trends and modern frameworks in the industry. I believe in building strong relationships and providing regular updates to ensure client satisfaction.
@@ -205,7 +203,7 @@ export default function Portfolio() {
     <h2 className="text-2xl mb-4 border rounded-full w-fit h-fit p-3 font-cursive ">Programming Languages & Frameworks</h2>
     <div className="grid grid-cols-1  gap-32 ">
     <div className="rounded-md shadow-lg bg-gradient-to-r from-slate-300 to-red-100 p-4">
-      <h3 className="text-xl  m-2 flex font-bold flex-col justify-center items-center">Programming Languages</h3>
+      <h3 className="text-xl  m-2 flex font-bold flex-col font-cursive justify-center items-center">Programming Languages</h3>
       <ul className="my-8 p-3 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2    gap-12">
       <li className="py-3 w-56 border-white  rounded-md flex flex-col items-center justify-center shadow-lg transition duration-300 ease-in-out transform hover:scale-105 border-2 border-gradient-to-r from-blue-500 to-red-500 hover:border-gradient-to-r hover:from-red-500 hover:to-blue-500">
           <FontAwesomeIcon icon={faPython} className="mr-2 text-6xl" />
@@ -247,7 +245,7 @@ export default function Portfolio() {
     </div>
 
 <div className="rounded-md shadow-lg bg-gradient-to-r from-slate-300 to-red-100 p-6">
-  <h3 className="text-xl font-bold mb-2 flex  justify-center">Frameworks</h3>
+  <h3 className="text-xl font-bold mb-2 flex font-cursive  justify-center">Frameworks</h3>
   <ul className="my-8 p-3 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-12">
     <li className="py-3 w-56 border-white rounded-md flex flex-col items-center justify-center shadow-lg transition duration-300 ease-in-out transform hover:scale-105 border-2 border-gradient-to-r from-blue-500 to-red-500 hover:border-gradient-to-r hover:from-red-500 hover:to-blue-500">
       <FontAwesomeIcon icon={faReact} className="mr-2 text-6xl" />
@@ -470,9 +468,8 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-      </div>
      
-      <footer className="bg-gradient-to-r from-slate-500 to-red-500 text-center p-4 mt-6">
+      <footer className="bg-gradient-to-r from-slate-500 to-red-300 text-center p-4 mt-6">
         <div className="flex justify-center items-center mb-4">
           <a href="https://github.com/Bonittas?tab=repositories" target="_blank" rel="noopener noreferrer" className="mr-4 text-white hover:text-gray-900">
             <FontAwesomeIcon icon={faGithub} className="text-white text-xl mx-2" />
